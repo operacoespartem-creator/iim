@@ -1,14 +1,25 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/",
       "has": [
         {
           "type": "host",
           "value": "iim-amber.vercel.app"
         }
       ],
-      "destination": "https://www.institutoim.com/:path*",
+      "destination": "https://www.institutoim.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:path+",
+      "has": [
+        {
+          "type": "host",
+          "value": "iim-amber.vercel.app"
+        }
+      ],
+      "destination": "https://www.institutoim.com/:path+",
       "permanent": true
     }
   ]
